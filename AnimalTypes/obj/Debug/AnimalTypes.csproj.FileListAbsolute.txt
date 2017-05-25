@@ -1,0 +1,5 @@
+c:\users\хоменко илья\documents\visual studio 2017\Projects\BinaryHomeTask\AnimalTypes\bin\Debug\AnimalTypes.dll
+c:\users\хоменко илья\documents\visual studio 2017\Projects\BinaryHomeTask\AnimalTypes\bin\Debug\AnimalTypes.pdb
+c:\users\хоменко илья\documents\visual studio 2017\Projects\BinaryHomeTask\AnimalTypes\obj\Debug\AnimalTypes.csprojResolveAssemblyReference.cache
+c:\users\хоменко илья\documents\visual studio 2017\Projects\BinaryHomeTask\AnimalTypes\obj\Debug\AnimalTypes.dll
+c:\users\хоменко илья\documents\visual studio 2017\Projects\BinaryHomeTask\AnimalTypes\obj\Debug\AnimalTypes.pdb
