@@ -46,6 +46,8 @@ namespace Controller
 				Console.WriteLine("Animal with this name doesnt exist");
 			else
 			{
+
+				Console.WriteLine(name + " was fed");
 				FeedCommand command = new FeedCommand(animals.Get(name));
 				CommandInvoker invoker = new CommandInvoker();
 
@@ -60,6 +62,8 @@ namespace Controller
 				Console.WriteLine("Animal with this name doesnt exist");
 			else
 			{
+
+				Console.WriteLine(name + " was cured");
 				CureCommand command = new CureCommand(animals.Get(name));
 				CommandInvoker invoker = new CommandInvoker();
 

@@ -8,12 +8,13 @@ namespace ZOO
 		const string types = "(These types are possible: Bear, Elephant, Fox, Lion, Tiger, Wolf)\n\n";
 		const string help = "\nTo add animal write \"add [animal name] [animal type]\" \n\n" +
 			 types + 
+			"To show information about animal write \"show [animal name]\" \n\n"+
 			"To feed animal write \"feed [animal name]\" \n\n" +
 			"To cure animal write \"cure [animal name]\" \n\n" +
 			"To remove animal from the zoo write \"remove [animal name]\" \n\n" +
 			"To view all animals write \"all\" \n\n" +
 			"To see help again write \"help\" \n\n" +
-			"To clearscreen write \"clear\" \n\n" +
+			"To clear screen write \"clear\" \n\n" +
 			"To exit type exit \n";
 
 		Zoo zoo;
@@ -32,6 +33,10 @@ namespace ZOO
 			{
 				case "feed":
 					zoo.Feed(input[1]);
+					return true;
+				case "show":
+					var a = zoo.animals.Get(input[1]);
+					Console.WriteLine("{0} {1} has {2} health and feels {3}", a.type, a.name, a.health, a.state);
 					return true;
 				case "cure":
 					zoo.Cure(input[1]);
