@@ -90,8 +90,9 @@ namespace ZOO
 								return true;
 							case "2":
 								if (input.Length == 3)
-								foreach (var d in zoo.animals.Test2(input[2]))
-									Console.WriteLine("{0} {1} has {2} health and feels {3}", d.type, d.name, d.health, d.state);
+									if (zoo.animals.Test2(input[2]) != null)
+										foreach (var d in zoo.animals.Test2(input[2]))
+											Console.WriteLine("{0} {1} has {2} health and feels {3}", d.type, d.name, d.health, d.state);
 
 								return true;
 							case "3":
