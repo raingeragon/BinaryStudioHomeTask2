@@ -22,7 +22,7 @@ namespace AnimalTypes
 
 		public void Feed()
 		{
-			if (state == State.Hugry)
+			if (state == State.Hungry)
 				state = State.Fed;
 
 		}
@@ -31,7 +31,7 @@ namespace AnimalTypes
 			if (health < maxHealth && state != State.Dead)
 				health++;
 			if (state == State.Sick)
-				state = State.Hugry;
+				state = State.Hungry;
 		}
 		public void NextState()
 		{
@@ -40,7 +40,7 @@ namespace AnimalTypes
 				case State.Fed:
 					state++;
 					break;
-				case State.Hugry:
+				case State.Hungry:
 					state++;
 					break;
 				case State.Sick:
@@ -55,7 +55,7 @@ namespace AnimalTypes
 	public enum State
 	{
 		Fed,
-		Hugry,
+		Hungry,
 		Sick,
 		Dead
 	}

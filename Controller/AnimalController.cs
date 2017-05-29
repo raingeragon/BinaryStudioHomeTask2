@@ -10,7 +10,7 @@ namespace Controller
 {
 	class AnimalController
 	{
-		private const int delay = 5000;
+		private const int delay = 50000;
 		private Timer timer;
 		private IRepository animals;
 
